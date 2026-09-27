@@ -23,15 +23,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-0=#01g=5hww+odvoqhn58q5ut3qmj=buepc$*%)e^(92e4l^$j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
-
-    ".railways.app", 
-    "saas-production-62fb.up.railway.app"
+    ".up.railway.app",
+    "saas-production-62fb.up.railway.app",
 ]
-if DEBUG:
-    ALLOWED_HOSTS += ["127.0.0.1","localhost"]  # Allow all hosts in debug mode
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://saas-production-62fb.up.railway.app",
+] # Allow all hosts in debug mode
 
 # Application definition
 
