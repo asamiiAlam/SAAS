@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
 
     ".railways.app", 
+    "saas-production-62fb.up.railway.app"
 ]
 if DEBUG:
     ALLOWED_HOSTS += ["127.0.0.1","localhost"]  # Allow all hosts in debug mode
