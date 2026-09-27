@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - SaaS  {% endblock %}
+
+{% block content %}
+
+<h1>Welcome to the Home Page</h1>
+
+{% include 'welcome.html' %}
+
+{{page_visit_count}} users have visited this page.
+{% endblock %}
